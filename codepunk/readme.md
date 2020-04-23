@@ -12,7 +12,7 @@ This video was an introduction to the project that codepunk is going to build.
 
 #### Video 2
 
-This video is about starting to build a bot from strach. It was bash commands for dependencies.
+This video is about starting to build a bot from strach. It uses bash commands for dependencies.
 
 ```json
 {
@@ -28,3 +28,7 @@ This video is about starting to build a bot from strach. It was bash commands fo
 #### Video 3
 
 Completion of a echo bot project.
+
+#### Video 4
+
+This video is about upgrade the bot framework to version 4
