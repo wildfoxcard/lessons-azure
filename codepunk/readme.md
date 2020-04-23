@@ -24,3 +24,7 @@ This video is about starting to build a bot from strach. It was bash commands fo
   }
 }
 ```
+
+#### Video 3
+
+Completion of a echo bot project.
