@@ -13,5 +13,8 @@
     "botbuilder": "^4.8.0",
     "restify": "^8.5.1",
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "chatdown": "^1.2.4"
   }
 }
