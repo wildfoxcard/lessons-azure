@@ -79,4 +79,13 @@ Publish Knowledge Base
 bf qnamaker:kb:publish --kbId=***Replace with id from "bf qnamaker:kb:list"**
 ```
 
+#### Video 7
+
+This video is about creating a luis service.
+
+```bash
+cd ./luis
+bf luis:convert --in=edui2018.lu --out=./
+```
+
 
