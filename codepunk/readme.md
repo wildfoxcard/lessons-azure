@@ -103,4 +103,10 @@ msbot init
 
 This video is about adding QNA maker to your chatbot
 
+#### Video 10
 
+This video is about adding luis to the chatbot.
+
+#### Video 11
+
+This video is about using luis to query data.
