@@ -110,3 +110,7 @@ This video is about adding luis to the chatbot.
 #### Video 11
 
 This video is about using luis to query data.
+
+#### Video 12
+
+This video is about creating cards for the chat.
