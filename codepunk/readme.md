@@ -35,8 +35,48 @@ This video is about upgrade the bot framework to version 4
 
 #### Video 5
 
-This video is about using chat down. It is apart of  the botframework cli now. I couldn't get chatdown to work.
+This video is about using chat down. It is apart of  the botframework cli now.
+
+[Bot Framework CLI](https://github.com/microsoft/botframework-cli)
+
+```bash
+npm i -g @microsoft/botframework-cli
+```
+
+[Generating chatdown](https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/README.md#bf-chatdownconvert)
+
+```bash
+cd ./transcripts
+bf chatdown:convert --in ./*.chat --out ./
+```
 
 #### Video 6
 
 This video is about ludown for qna maker.
+
+Generating Ludown
+
+```bash
+cd ./luis
+bf qnamaker:convert --in=./qna.lu --out=./
+```
+
+init qna maker.
+
+```bash
+bf qnamaker:init
+```
+
+Create knowledge base
+
+```bash 
+bf qnamaker:kb:create --in=./qna.json
+```
+
+Publish Knowledge Base
+
+```bash
+bf qnamaker:kb:publish --kbId=***Replace with id from "bf qnamaker:kb:list"**
+```
+
+
