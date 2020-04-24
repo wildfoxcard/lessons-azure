@@ -99,3 +99,8 @@ npm install -g msbot
 msbot init
 ```
 
+#### Video 9
+
+This video is about adding QNA maker to your chatbot
+
+
