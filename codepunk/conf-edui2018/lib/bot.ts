@@ -1,10 +1,12 @@
 import { TurnContext } from "botbuilder";
-import { QnAMaker } from "botbuilder-ai";
+import { QnAMaker, LuisRecognizer } from "botbuilder-ai";
 
 export class ConfBot {
   private _qnaMaker: QnAMaker;
-  constructor(qnaMaker: QnAMaker) {
+  private _luis: LuisRecognizer;
+  constructor(qnaMaker: QnAMaker, luis: LuisRecognizer) {
     this._qnaMaker = qnaMaker;
+    this._luis = luis;
   }
 
   async onTurn(context: TurnContext) {
@@ -20,6 +22,11 @@ export class ConfBot {
       }
       if (qnaResults.length > 0) {
         await context.sendActivity(qnaResults[0].answer);
+      } else {
+        await this._luis.recognize(context).then(res => {
+          const top = LuisRecognizer.topIntent(res);
+          context.sendActivity(`the top intent found was ${top}`)
+        })
       }
     } else {
       await context.sendActivity(`${context.activity.type} event detected`);
