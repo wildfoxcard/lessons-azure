@@ -88,4 +88,14 @@ cd ./luis
 bf luis:convert --in=edui2018.lu --out=./
 ```
 
+#### Video 8
+
+This video is about creating a bot file.
+
+It seems deprecated.
+
+```bash
+npm install -g msbot
+msbot init
+```
 
